@@ -1,7 +1,7 @@
 {
   "name": "@tailsec/scan-sast",
   "version": "0.1.0",
-  "description": "Advanced SAST scanner - deeper security analysis than scan-code",
+  "description": "Advanced SAST scanner",
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
@@ -28,13 +28,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@types/glob": "^8.1.0",
     "@types/jest": "^29.5.0",
     "@types/node": "^20.0.0",
+    "glob": "^11.0.0",
     "jest": "^29.7.0",
-    "ts-jest": "^29.1.0",
+    "ts-jest": "^29.4.9",
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "glob": "^7.2.3"
   }
 }
