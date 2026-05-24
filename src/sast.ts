@@ -11,6 +11,16 @@ export interface SastFinding {
   remediation: string[];
 }
 
+export function isBinaryFile(content: Buffer): boolean {
+  if (content.length === 0) return true;
+  if (content.length < 4) return false;
+  const checkLen = Math.min(content.length, 8192);
+  for (let i = 0; i < checkLen; i++) {
+    if (content[i] === 0) return true;
+  }
+  return false;
+}
+
 const SAST_RULES = [
   { id: 'sast-pickle', severity: 'critical', cwe: 'CWE-502', owasp: ['A8'], title: 'Python pickle deserialization is unsafe',
     patterns: [/\bpickle\.loads?\(/, /\bpickle\.load\(/] },
