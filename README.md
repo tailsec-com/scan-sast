@@ -120,3 +120,5 @@ Also add corresponding remediation in the `getRemediation()` function.
 ## License
 
 MIT
+
+[![advertisement](https://ads.servead.net/i/a77be98b-25aa-412b-8951-ebdd674e3e06.svg)](https://ads.servead.net/c/a77be98b-25aa-412b-8951-ebdd674e3e06)
